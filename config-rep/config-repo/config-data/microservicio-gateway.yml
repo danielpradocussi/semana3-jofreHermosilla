@@ -1,0 +1,127 @@
+spring:
+  cloud:
+    gateway:
+      routes[0]:
+        id: microservicio-activo-personal
+        predicates: Path=/api/activo/personal/**
+        filters: StripPrefix=3
+        uri: lb://microservicio-activo-personal
+      routes[1]:
+        id: microservicio-activo-empresarial
+        predicates: Path=/api/activo/empresarial/**
+        filters: StripPrefix=3
+        uri: lb://microservicio-activo-empresarial
+      routes[2]:
+        filters: StripPrefix=4
+        predicates: Path=/api/activo/tarjeta/credito/**
+        id: microservicio-activo-tarjetadecredito
+        uri: lb://microservicio-activo-tarjetadecredito
+      routes[3]:
+        predicates: Path=/api/cargar/credito/**
+        id: microservicio-cargar-credito
+        uri: lb://microservicio-cargar-credito
+        filters: StripPrefix=3
+      routes[4]:
+        uri: lb://microservicio-cuenta-activa
+        predicates: Path=/api/cuenta/activa/**
+        id: microservicio-cuenta-activa
+        filters: StripPrefix=3
+      routes[5]:
+        uri: lb://microservicio-cuenta-pasiva
+        filters: StripPrefix=3
+        predicates: Path=/api/cuenta/pasiva/**
+        id: microservicio-cuenta-pasiva
+      routes[6]:
+        predicates: Path=/api/cliente/juridico/**
+        filters: StripPrefix=3
+        id: microservicio-cliente-juridico
+        uri: lb://microservicio-cliente-juridico
+      routes[7]:
+        predicates: Path=/api/cliente/natural/**
+        filters: StripPrefix=3
+        uri: lb://microservicio-cliente-natural
+        id: microservicio-cliente-natural
+      routes[8]:
+        predicates: Path=/api/deposito/cuenta/**
+        uri: lb://microservicio-deposito-cuentas
+        id: microservicio-deposito-cuentas
+        filters: StripPrefix=3
+      routes[9]:
+        predicates: Path=/api/empresarial/cuentacorriente/**
+        id: microservicio-empresarial-cuentacorriente
+        filters: StripPrefix=3
+        uri: lb://microservicio-empresarial-cuentacorriente
+      routes[10]:
+        predicates: Path=/api/movimiento/cuentas/**
+        uri: lb://microservicio-movimiento-cuentas
+        id: microservicio-movimiento-cuentas
+        filters: StripPrefix=3
+      routes[11]:
+        predicates: Path=/api/pagos/credito/**
+        filters: StripPrefix=3
+        id: microservicio-pagos-credito
+        uri: lb://microservicio-pagos-credito
+      routes[12]:
+        predicates: Path=/api/pasivo/ahorro/**
+        uri: lb://microservicio-pasivo-ahorro
+        filters: StripPrefix=3
+        id: microservicio-pasivo-ahorro
+      routes[13]:
+        predicates: Path=/api/pasivo/cuentacorriente/**
+        uri: lb://microservicio-pasivo-cuentacorriente
+        filters: StripPrefix=3
+        id: microservicio-pasivo-cuentacorriente
+      routes[14]:
+        predicates: Path=/api/pasivo/plazofijo/**
+        id: microservicio-pasivo-plazofijo
+        filters: StripPrefix=3
+        uri: lb://microservicio-pasivo-plazofijo
+      routes[15]:
+        predicates: Path=/api/persona/cuenta/pasiva/**
+        id: microservicio-persona-cuenta-pasiva
+        uri: lb://microservicio-persona-cuenta-pasiva
+        filters: StripPrefix=4
+      routes[16]:
+        filters: StripPrefix=3
+        predicates: Path=/api/representante/empresarial/**
+        id: microservicio-representante-empresarial
+        uri: lb://microservicio-representante-empresarial
+      routes[17]:
+        id: microservicio-retiros-cuentas
+        filters: StripPrefix=3
+        uri: lb://microservicio-retiros-cuentas
+        predicates: Path=/api/retiros/cuenta/**
+      routes[18]:
+        id: microservicio-saldo-cuenta
+        uri: lb://microservicio-saldo-cuenta
+        filters: StripPrefix=3
+        predicates: Path=/api/saldo/cuenta/**
+      routes[19]:
+        filters: StripPrefix=3
+        id: microservicio-usar-cuenta
+        uri: lb://microservicio-usar-cuenta
+        predicates: Path=/api/usar/cuenta/**
+      routes[20]:
+        filters: StripPrefix=3
+        id: microservicio-tarjeta-debito
+        uri: lb://microservicio-tarjeta-debito
+        predicates: Path=/api/tarjeta/debito/**
+
+      discovery:
+        locator:
+          enabled: 'true'
+    loadbalancer:
+      ribbon:
+        enabled: 'false'
+  application:
+    name: microservicio-gateway
+server:
+  port: '8090'
+eureka:
+  client:
+    fetch-registry: 'true'
+    register-with-eureka: 'true'
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost

@@ -1,0 +1,32 @@
+
+
+                   ▄▄   ▄ ▄▄▄▄▄ ▄▄▄▄▄▄  ▄▄▄▄▄▄ ▄▄▄▄▄▄▐▄▄▄▄▄ ▄▄▄▄▄▄
+
+                  ▐▓▐▓ ▐▓   ▓     ▓▓    ▓░  ▐▓ ▄▄▄▄▄▓   ▓   ▄▄▄▄▓▓
+
+                  ▐▓ ▐▓▐▓   ▓     ▓▓    ▓▒  ▐▓░▓▌  ▐▓   ▓  ▐▓▒  ▐▓
+
+                   ▀   ▀▀   ▀     ▀▀    ▀▀▀▀▀   ▀▀▀▀▀   ▀    ▀▀▀▀▀
+                   
+                   
+                   
+                   
+                   
+
+proyecto semana3
+
+
+
+
+
+INTEGRANTES:
+
+Joffre Hermosilla Salas
+
+
+
+
+
+
+MICROSERVICIO ACTIVO CARGAR CREDITO
+                  

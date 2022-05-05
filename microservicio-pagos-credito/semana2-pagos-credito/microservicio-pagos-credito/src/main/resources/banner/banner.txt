@@ -1,0 +1,30 @@
+
+
+                   ▄▄   ▄ ▄▄▄▄▄ ▄▄▄▄▄▄  ▄▄▄▄▄▄ ▄▄▄▄▄▄▐▄▄▄▄▄ ▄▄▄▄▄▄
+
+                  ▐▓▐▓ ▐▓   ▓     ▓▓    ▓░  ▐▓ ▄▄▄▄▄▓   ▓   ▄▄▄▄▓▓
+
+                  ▐▓ ▐▓▐▓   ▓     ▓▓    ▓▒  ▐▓░▓▌  ▐▓   ▓  ▐▓▒  ▐▓
+
+                   ▀   ▀▀   ▀     ▀▀    ▀▀▀▀▀   ▀▀▀▀▀   ▀    ▀▀▀▀▀
+                   
+                   
+                   
+                   
+                   
+
+proyecto semana3
+
+
+
+
+INTEGRANTES:
+Segundo william Guzman CorreaJoffre Hermosilla Salas
+
+
+
+
+
+
+MICROSERVICIO PAGOS CREDITO
+                  

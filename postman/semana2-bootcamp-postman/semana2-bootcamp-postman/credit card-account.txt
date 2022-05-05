@@ -1,0 +1,51 @@
+JSON LINK
+
+https://www.getpostman.com/collections/d362f55dc0da552966f7
+
+
+## crear tipo de credit card
+post 
+localhost:8090/api/activo/tarjeta/credito/create-creditcard-account
+
+json
+
+{
+    "typename": "VIP"
+
+}
+
+## muestra a todos los credit card
+
+localhost:8090/api/cliente/natural/all
+
+## crear creditcard
+localhost:8090/api/cliente/natural/create-natural-response/626208bafd7af9601a085afd
+
+
+localhost:8090/api/cliente/natural/create-natural-response/{idtypeclient}
+
+
+UPDATE TYPE NATURAL client
+localhost:8090/api/cliente/natural/update-type-client/626208cdfd7af9601a085afe
+
+localhost:8090/api/cliente/natural/update-type-client/{typenaturalId}
+
+
+
+UPDATE NATURAL CLIENT 
+
+localhost:8090/api/cliente/natural/6261c61d1b5c6065aaabcd51/update-natural-client/626208cdfd7af9601a085afe
+
+localhost:8090/api/cliente/natural/{naturalId}/update-natural-client/{typNameId}
+
+
+
+DELETE NATURAL CLIENT
+
+localhost:8090/api/cliente/natural/eliminar-cliente-natural/6261c61d1b5c6065aaabcd51
+
+localhost:8090/api/cliente/natural/eliminar-cliente-natural/{naturalClientId}
+
+
+
+
